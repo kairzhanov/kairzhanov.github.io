@@ -20,14 +20,14 @@ main {
     }
 
     .section-subtitle {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: $font-weight-medium;
         line-height: 1;
         color: $primary;
     }
 
     p {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 1.538;
         font-weight: $font-weight-light;
     }
@@ -96,7 +96,7 @@ main {
 
             .badge {
                 padding: 6px 10px;
-                font-size: 8px;
+                font-size: 10px;
                 font-weight: $font-weight-medium;
                 line-height: 1;
                 border-radius: 2px;
@@ -104,25 +104,35 @@ main {
             }
 
             &-title {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: $font-weight-bold;
                 line-height: 1;
                 margin-bottom: 2px;
             }
 
             &-subtitle {
-                font-size: 10px;
+                font-size: 14px;
                 font-weight: $font-weight-medium;
                 line-height: 1.6;
                 color: #a7a7a7;
-                margin-bottom: 3px;
+                margin-bottom: 2px;
+            }
+
+            &-location {
+                font-size: 14px;
+                color: #a7a7a7;
+                margin-bottom: 2px;
             }
 
             &-content {
-                font-size: 10px;
+                font-size: 14px;
                 font-weight: $font-weight-light;
                 line-height: 1.6;
                 margin-bottom: 0;
+            }
+
+            i {
+                width: 10px;
             }
         }
     }

@@ -43,21 +43,22 @@ header {
     }
 
     @media (min-width: 768px) {
-        max-width: 750px;
+        max-width: $min-width-768;
     }
 
     @media (min-width: 992px) {
-        max-width: 970px;
+        max-width: $min-width-992;
     }
 
     @media (min-width: 1200px) {
-        max-width: 1170px;
+        max-width: $min-width-1200;
     }
 }
 
 aside {
-    padding-right: 57px;
-    min-width: 240px;
+    // padding-right: 57px;
+    min-width: $aside-min-width;
+    position: fixed;
 
     @media (max-width: 767px) {
         width: 100%;
@@ -65,6 +66,20 @@ aside {
     }
 }
 
+$aside-space: 80px;
+
 main {
-    flex-grow: 1;
+    // flex-grow: 1;
+    margin-left: auto;
+    @media (min-width: 768px) {
+        max-width: calc(#{$min-width-768} - #{$aside-min-width} - #{$aside-space});
+    }
+
+    @media (min-width: 992px) {
+        max-width: calc(#{$min-width-992} - #{$aside-min-width} - #{$aside-space});
+    }
+
+    @media (min-width: 1200px) {
+        max-width: calc(#{$min-width-1200} - #{$aside-min-width} - #{$aside-space});
+    }
 }
