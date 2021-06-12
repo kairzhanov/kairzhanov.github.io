@@ -6,4 +6,6 @@ export class Experience {
     points: string[] = [];
     company_name: string = "";
     company_url: string = "";
+    technologies: string[] = [];
+    years: number[] = [];
 }

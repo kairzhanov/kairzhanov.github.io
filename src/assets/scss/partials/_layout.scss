@@ -63,6 +63,9 @@ aside {
     @media (max-width: 767px) {
         width: 100%;
         padding-right: 0;
+        position: static;
+        padding-left: 0;
+        margin-bottom: 50px;
     }
 }
 
