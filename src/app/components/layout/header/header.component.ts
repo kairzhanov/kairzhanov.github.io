@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ClipboardService } from 'ngx-clipboard';
 import { Subscription } from 'rxjs';
 import { WindowService } from 'src/app/services/window.service';
 declare var $:any;
@@ -13,7 +15,7 @@ export class HeaderComponent implements OnInit {
   public showNavigation = true;
   private resizeSubscription!: Subscription;
   
-  constructor(private windowService: WindowService) { }
+  constructor(private windowService: WindowService, private clipboardApi: ClipboardService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.resizeSubscription = this.windowService.onResize$
@@ -24,20 +26,16 @@ export class HeaderComponent implements OnInit {
           this.showNavigation = true;
         }
       });
+  }
 
-    // if (window.innerWidth < 756) {
-    //   this.showNavigation = false;
-    // }
+  copyUrl() {
+    this.clipboardApi.copyFromContent(window.location.hostname);
   }
 
   ngOnChanges() {
   }
 
   ngAfterViewInit() {
-    // $('[data-toggle="collapsible-nav"]').on('click', function(e: any){
-    //   var target = ($(e.target).data('target'));
-    //   $('#' + target).toggleClass('show');
-    // });
   }
 
   ngOnDestroy() {

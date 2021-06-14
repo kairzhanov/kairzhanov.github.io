@@ -1,6 +1,7 @@
-export class Portfolio {
+export class Project {
     title: string = "";
-    year: number[] = [];
+    years: number[] = [];
     description: string = "";
-    
+    image: string = "";
+    technology: string[] = [];
 }
