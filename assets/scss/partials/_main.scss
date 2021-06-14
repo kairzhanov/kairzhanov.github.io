@@ -388,27 +388,38 @@ main {
             }
 
             &-img {
-                max-height: 198px;
+                max-height: 220px;
                 max-width: 100%;
             }
 
             &-details {
                 padding: 22px 26px;
-                background-color: rgba($black, 0.42);
+                background-color: rgba($black, 0.72);
                 color: $white;
             }
 
             &-title {
-                font-size: 10px;
+                font-size: 18px;
                 font-weight: $font-weight-bold;
                 line-height: 1;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
             }
 
             &-description {
-                font-size: 10px;
-                line-height: 1;
-                margin-bottom: 0;
+                font-size: 14px;
+                line-height: 1.2;
+                margin-bottom: 10px;
+            }
+
+            &-technology {
+                font-size: 12px;
+                line-height: 1.2;
+                margin-bottom: 10px;
+            }
+
+            &-years {
+                font-size: 12px;
+                line-height: 1.2;
             }
         }
     }
