@@ -1,7 +1,7 @@
 
 <main>
     <section id="education" class="resume-section section">
-        <h6 class="section-subtitle">RESUME</h6>
+        <!-- <h6 class="section-subtitle">WHERE I STUDY</h6> -->
         <h2 class="section-title">EDUCATION</h2>
         <ul class="time-line">
             <li class="time-line-item" *ngFor="let item of educations">
@@ -14,7 +14,7 @@
         </ul>
     </section>
     <section id="experience" class="experience-section section">
-        <h6 class="section-subtitle">RESUME</h6>
+        <!-- <h6 class="section-subtitle">WHAT I DO</h6> -->
         <h2 class="section-title">EXPERIENCE</h2>
         <ul class="time-line">
             <li class="time-line-item" *ngFor="let item of experiences">
@@ -27,7 +27,37 @@
             </li>
         </ul>
     </section>
-    <section class="clients-section section">
+    <section id="achievements" class="achievements-section section">
+        <!-- <h6 class="section-subtitle">WHAT I DO</h6> -->
+        <h2 class="section-title">ACHIEVEMENTS</h2>
+        <ul class="time-line">
+            <li class="time-line-item" *ngFor="let item of achievements">
+                <span class="badge badge-primary">{{ item.year }}</span>
+                <h6 class="time-line-item-title">{{ item.title }}</h6>
+                <!-- <p class="time-line-item-subtitle"><a [href]="item.company_url" target="_blank">{{ item.company_name }}</a> 
+                    <span *ngIf="item.company_description.length > 0"> - {{ item.company_description }}</span>
+                </p> -->
+                <p class="time-line-item-location"><i class="fas fa-map-marker-alt mr-1"></i> {{ item.location }}</p>
+                <p class="time-line-item-content">{{ item.description }}</p>
+            </li>
+        </ul>
+    </section>
+    <section class="certificates-section section">
+        <h6 class="section-subtitle"></h6>
+        <h2 class="section-title">CERTIFICATES</h2>
+        <div class="certificate-logos-wrapper">
+            <div class="certificate-logo" *ngFor="let item of certificates" >
+                <a [href]="item.file_url" target="_blank" [title]="item.title">
+                    <img [src]="item.image_url" alt="logo" class="w-100">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="certificates-section section">
+        <h6 class="section-subtitle">WIP</h6>
+        <h2 class="section-title">MORE IS COMING SOON</h2>
+    </section>
+    <!-- <section class="clients-section section">
         <h6 class="section-subtitle">WHAT I DO</h6>
         <h2 class="section-title">CLIENTS</h2>
         <div class="client-logos-wrapper">
@@ -36,8 +66,8 @@
             <div class="client-logo"><img src="assets/images/Clients_3.svg" alt="logo" class="w-100"></div>
             <div class="client-logo"><img src="assets/images/Clients_4.svg" alt="logo" class="w-100"></div>
         </div>
-    </section>
-    <section class="services-section section">
+    </section> -->
+    <!-- <section class="services-section section">
         <h6 class="section-subtitle">WHAT I DO</h6>
         <h2 class="section-title">SERVICES</h2>
         <div class="row">
@@ -112,8 +142,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="testimonial-section section">
+    </section> -->
+    <!-- <section class="testimonial-section section">
         <div id="testimonialCarousel" class="testimonial-carousel carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -141,7 +171,7 @@
                 <li data-target="#testimonialCarousel" data-slide-to="2"></li>
             </ol>
         </div>
-    </section>
+    </section> -->
     <!-- <div class="widget card">
         <div class="card-body">
             <div class="widget-content">
@@ -165,4 +195,5 @@
             </div>
         </div>
     </div> -->
+
 </main>

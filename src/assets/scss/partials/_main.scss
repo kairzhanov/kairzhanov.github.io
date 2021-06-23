@@ -248,6 +248,48 @@ main {
         text-align: center;
     }
 
+    .certificates-section {
+        margin-bottom: 45px;
+
+        .section-title {
+            margin-bottom: 3rem;;
+        }
+    }
+
+    .certificate-logos-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .certificate-logo {
+            width: calc(25% - 10px);
+            // border: 1px solid #f3f3f3;
+            // padding: 10px 15px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            @media (max-width: 991px) {
+                width: calc( 50% - 10px);
+            }
+
+            @media (max-width: 767px) {
+                width: calc( 25% - 10px);
+            }
+
+            @media (max-width: 575px) {
+                width: calc( 50% - 10px);
+            }
+
+            img {
+                max-width: 100%;
+                // max-height: 21px;
+            }
+        }
+    }
+
     .clients-section {
         margin-bottom: 45px;
     }

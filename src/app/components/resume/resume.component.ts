@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Certificate } from 'src/app/models/certificate.model';
 import { Achievement } from 'src/app/models/achievement.model';
 import { Education } from 'src/app/models/education.model';
 import { Experience } from 'src/app/models/experience.model';
@@ -154,10 +155,10 @@ export class ResumeComponent implements OnInit {
       description: "Developed AI model that predicts missed deadlines at the construction site"
     },
     {
-      title: "DLD Hackathon",
+      title: "3rd place at DLD Hackathon",
       location: "Almaty, Kazakhstan",
       year: 2021,
-      description: "Developed Credit Scoring Model for BCK bank"
+      description: "Developed Credit Scoring Model for BCK bank",
     },
     {
       title: "2nd place at Baiterek Hackathon",
@@ -169,7 +170,8 @@ export class ResumeComponent implements OnInit {
       title: "Tech Central Asia Startup Acceleration program finalist",
       location: "Astana, Kazakhstan",
       year: 2019 ,
-      description: ""
+      description: "",
+      icon_url: "assets/images/team.svg"
     },
     {
       title: '2nd place at "Asia Youth Entrepreneurship Program"',
@@ -187,9 +189,20 @@ export class ResumeComponent implements OnInit {
       title: "UNICorn Startup Support program participant",
       location: "Ulsan, South Korea",
       year: 2018,
-      description: ""
+      description: "",
+      icon_url: "assets/images/team.svg"
     }
-  ]
+  ];
+
+  public certificates: Certificate[] = [
+    {
+      title: "Introduction to Kubernetes",
+      description: " ",
+      file_url: "assets/files/certificates/intro_kubernetes.pdf",
+      image_url: "assets/images/certificates/intro_kubernetes.png",
+      years: [2021],
+    }
+  ];
 
 
 

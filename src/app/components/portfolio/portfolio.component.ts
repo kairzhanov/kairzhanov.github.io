@@ -84,9 +84,15 @@ export class PortfolioComponent implements OnInit {
           // if(JQuery.fn.entry){ //Check if entry js file is loaded.
               direction = $(event.target).entry({ e: event }); // Get mouse in direction.
           // }
-  
-          $(event.target).removeClass(this.classNames.join(" ")); // Remove existing animation classes.
-          $(event.target).addClass("in-" + direction); //Add mouse in animation
+          
+          let target = event.target;
+          if (event.target.classList.contains('portfolio-item-img')) {
+            target = event.target.parentElement;
+          }
+          $(target).removeClass(this.classNames.join(" ")); // Remove existing animation classes.
+          $(target).addClass("in-" + direction); //Add mouse in animation
+
+          
       }, 
       
       (event: any) => {
@@ -94,8 +100,13 @@ export class PortfolioComponent implements OnInit {
           // if(jQuery.fn.entry){
         direction = $(event.target).entry({ e: event }); // Get mouse out direction.
         // }
-        $(event.target).removeClass(this.classNames.join(" "));
-        $(event.target).addClass("out-" + direction); //Add mouse out animation
+        let target = event.target;
+        if (event.target.classList.contains('portfolio-item-img')) {
+          target = event.target.parentElement;
+        }
+
+        $(target).removeClass(this.classNames.join(" "));
+        $(target).addClass("out-" + direction); //Add mouse out animation
       }
     );
   }
