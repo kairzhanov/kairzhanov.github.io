@@ -35,8 +35,25 @@ export class ResumeComponent implements OnInit {
 
   experiences: Experience[] = [
     {
+      title: "Middle Full-stack Engineer (Remote)",
+      period: "Aug 2021 - Present",
+      company_description: "Healtcare Startup (Chronic pain treatment)",
+      
+      description: "",
+      points: [
+        "• Fixed bugs, developed a survey taking module",
+        "• Helped with software development planning",
+        "• Developing an admin portal for patients management",
+        "• Technology: C#, ASP.NET Core, Angular, MSSQL, Material Angular, Figma"
+      ],
+      company_name: "Brain Changer",
+      company_url: "https://brainchanger.io/",
+      years: [2021],
+      technologies: ["C#", "ASP.NET Core", "MSSQL", "REST", "Material Angular", "Angular", "HTML&CSS", "Figma", "Typescript"]
+    },
+    {
       title: "Software Engineer",
-      period: "Aug 2020 - Present",
+      period: "Aug 2020 - Aug 2021",
       company_description: "Second tier bank (Top 1 in Kazakhstan)",
       
       description: "",
