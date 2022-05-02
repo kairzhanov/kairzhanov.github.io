@@ -35,9 +35,9 @@ export class ResumeComponent implements OnInit {
 
   experiences: Experience[] = [
     {
-      title: "Middle Full-stack Engineer (Remote)",
+      title: "Full-stack Engineer (Remote)",
       period: "Aug 2021 - Present",
-      company_description: "Healtcare Startup (Chronic pain treatment)",
+      company_description: "Healthcare Startup (Chronic pain treatment)",
       
       description: "",
       points: [
