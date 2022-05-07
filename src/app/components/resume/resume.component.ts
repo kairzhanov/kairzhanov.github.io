@@ -218,6 +218,13 @@ export class ResumeComponent implements OnInit {
       file_url: "assets/files/certificates/intro_kubernetes.pdf",
       image_url: "assets/images/certificates/intro_kubernetes.png",
       years: [2021],
+    },
+    {
+      title: "Angular Flow",
+      description: "",
+      file_url: "assets/images/certificates/angular_flow.jpg",
+      image_url: "assets/images/certificates/angular_flow.jpg",
+      years: [2021]
     }
   ];
 

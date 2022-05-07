@@ -259,7 +259,7 @@ main {
     .certificate-logos-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         .certificate-logo {
             width: calc(25% - 10px);
